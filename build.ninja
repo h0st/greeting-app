@@ -1,0 +1,4 @@
+rule cc
+  command = clang++ -Wall -Wextra -Werror -std=c++11 hello.cpp -o hello
+
+build hello.o: cc hello.cpp
