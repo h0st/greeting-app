@@ -9,4 +9,3 @@ An example of app for building C++ application using Ninja build system
   * image.conf - Docker image parameters
   * hello.cpp - C++ example application
   * build.ninja - Ninja builder config file
-  * .gitignore - Git ignore file for C++ apps

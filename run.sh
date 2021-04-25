@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+IMAGE="hello-from-image"
 #
 echo "Building Docker image ..." 
 ./build.sh
@@ -8,9 +8,8 @@ docker images | grep hello-from-image
 status=$?
 #
 if [ $status -eq 0 ]; then
-  echo "Running a Docker container ... Press Ctrl-C for exist!"
-  docker run -d -it --rm --name hello hello-from-image:latest
-  docker logs hello
+  echo "Running a Docker container ... "
+  docker run -it --rm --name hello $IMAGE hello
 else
   echo "hello-from-image image not fould! Please rebuild image!"
   exit 1
