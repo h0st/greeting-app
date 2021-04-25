@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-IMAGE="hello-from-image"
+IMAGE="hello-from-image:latest"
 #
 echo "Building Docker image ..." 
 ./build.sh
