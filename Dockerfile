@@ -9,7 +9,7 @@ USER root
 RUN apt-get update && apt-get install -y xz-utils curl
 # NOTE: CLANG 12.0.0 doesn't exist for Ubuntu 18.04 ! 
 RUN cd /tmp/ \
-    && curl -SL https://github.com/llvm/llvm-project/releases/download/llvmorg-$CLANG_VERSION/clang+llvm-$CLANG_VERSION-x86_64-linux-gnu-$BASE_IMAGE_NAME-$$BASE_IMAGE_VERSION.tar.xz -# -o llvm.tar.xz \
+    && curl -SL https://github.com/llvm/llvm-project/releases/download/llvmorg-$CLANG_VERSION/clang+llvm-$CLANG_VERSION-x86_64-linux-gnu-$BASE_IMAGE_NAME-$BASE_IMAGE_VERSION.tar.xz -# -o llvm.tar.xz \
     && mkdir clang-$CLANG_VERSION/ \
     && tar xf ./llvm.tar.xz -C clang-$CLANG_VERSION –strip-components=1
 
