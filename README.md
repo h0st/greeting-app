@@ -1,6 +1,7 @@
 # greeting-app
 An example of app for building C++ application using Ninja build system
 
+<b>OS: Linux and Windows support!</b>
 
 ## Files
   * `./run.sh` - script for running an application in a Docker container. <b>Starts with this script!</b>
